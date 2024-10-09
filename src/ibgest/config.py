@@ -67,5 +67,6 @@ def set_device(device_type: str = "auto") -> torch.device:
     else:
         raise ValueError(f"Invalid device type: {device_type}")
 
-    logger.info(f"Using device: {device}")
+    logger.debug(f"Using device: {device}")
+
     return device
