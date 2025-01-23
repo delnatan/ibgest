@@ -63,7 +63,7 @@ def iterative_background_estimate(
             image.shape, filter_widths, pixel_spacing=pixel_spacing
         ).to(DEVICE)
     elif filter == "uniform":
-        low_pass_filter = compute_gaussian_filter(
+        low_pass_filter = compute_uniform_filter(
             image.shape, filter_widths
         ).to(DEVICE)
 
